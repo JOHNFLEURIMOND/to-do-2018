@@ -27,6 +27,8 @@ video {
 
 .content {
   position: absolute;
+  top: 18em;
+  left: 43em;
 }
 
 button {
@@ -39,8 +41,13 @@ input {
   color: #284E77;
 }
 
+input:hover {
+  background-color: #284E77;
+  color: #F5FCFF;
+}
+
 button:hover {
-  background-color: #E5F2FF;
+  background-color: #284E77;
   color: w;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
