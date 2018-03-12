@@ -8,7 +8,7 @@ HTML, CSS, Node.JS, Express, MongoDB, Javascript Framework of choice Under the H
 
 
 ## Optimizations
-After now looking at it, I would have to like to add a edit button instead of a thumbs down button and I would have also change the thumbs up to a checkbox or radio buttons.
+After now looking at it, I would like to add a edit button instead of a thumbs down button and I would have also change the thumbs up to a checkbox or radio buttons.
 
 ## Lessons Learned:
 
