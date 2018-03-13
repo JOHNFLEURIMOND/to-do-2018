@@ -27,5 +27,5 @@ No matter what my experience level, being an engineer means continuously learnin
 
 ## Usage
 
-1. run `npm todo`
+1. run `npm run todo`
 2. Navigate to `localhost:3000`
