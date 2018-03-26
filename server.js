@@ -9,7 +9,7 @@ MongoClient.connect('mongodb://godsplan:MiltonMass2018@ds039195.mlab.com:39195/t
   if (err) return console.log(err)
   db = database
   app.listen(process.env.PORT || 3000, () => {
-    console.log('listening on 3000')
+    console.log('Andre' + port)
   })
 })
 

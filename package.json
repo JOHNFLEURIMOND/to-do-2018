@@ -1,21 +1,24 @@
 {
-  "name": "crud-express-mongo",
+  "name": "to-do-2018",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "![2018 To Do List!](public/to-do-2018.png)",
+  "main": "server.js",
+  "dependencies": {
+    "nodemon": "^1.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "todo": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "todo": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JOHNFLEURIMOND/to-do-2018.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.14.2",
-    "ejs": "^2.3.4",
-    "express": "^4.13.3",
-    "mongodb": "^2.1.4"
+  "bugs": {
+    "url": "https://github.com/JOHNFLEURIMOND/to-do-2018/issues"
   },
-  "devDependencies": {
-    "nodemon": "^1.17.1"
-  }
+  "homepage": "https://github.com/JOHNFLEURIMOND/to-do-2018#readme"
 }
