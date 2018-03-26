@@ -1,10 +1,9 @@
 body {
   color: #F5FCFF;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
-  font-weight: boldeG;
-  font-family: Helvetica, Arial, sans-serif;
-  background-image: url("suwoo.png");
+  font-weight: bolder;
+  font-family: 'Work Sans', sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,23 +26,24 @@ video {
 
 .content {
   position: absolute;
-  top: 18em;
+  top: 12em;
   left: 43em;
 }
 
 button {
-  background: #F5FCFF;
-  color: #284E77;
+  background: transparent;
+  color: #FFFFFF;
 }
 
 input {
-  background-color: #F5FCFF;
-  color: #284E77;
+  background-color: transparent;
+  color: #FFFFFF;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 input:hover {
   background-color: #284E77;
-  color: #F5FCFF;
+  color: #FFFFFF;
 }
 
 button:hover {
@@ -58,12 +58,71 @@ button:hover {
 
 /* Center the container */
 
-/* #container {
-  width: 960px;
-  margin: auto;
-  background-image: url("../img/suwoo.png");
-} */
-
 h3 {
   margin-top: 40px;
+}
+
+.display__time-left {
+  font-weight: 100;
+  font-size: 15rem;
+  margin: 0;
+  color: white;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.timer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.timer__controls {
+  display: flex;
+}
+
+.timer__controls>* {
+  flex: 1;
+}
+
+.timer__controls form {
+  flex: 1;
+  display: flex;
+}
+
+.timer__controls input {
+  flex: 1;
+  border: 0;
+  padding: 2rem;
+}
+
+.timer__button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  font-family: 'Inconsolata', monospace;
+}
+
+.timer__button:hover, .timer__button:focus {
+  background: rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.display__end-time {
+  font-size: 4rem;
+  color: white;
 }
