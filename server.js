@@ -5,7 +5,12 @@ const MongoClient = require('mongodb').MongoClient
 
 var db
 
-MongoClient.connect('REMOVED_LEGACY_MONGODB_URI', (err, database) => {
+if (!process.env.MONGODB_URI) {
+  console.error('MONGODB_URI environment variable is required')
+  process.exit(1)
+}
+
+MongoClient.connect(process.env.MONGODB_URI, (err, database) => {
   if (err) return console.log(err)
   db = database
   app.listen(process.env.PORT || 3000, () => {
